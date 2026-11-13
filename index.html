@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="A friendly, interactive mathematics learning and practice app for Nigerian JSS1 and JSS2 students.">
+  <title>Maths Made Easy | JSS1 &amp; JSS2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to learning area</a>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Maths Made Easy home">
+      <span class="brand-mark" aria-hidden="true">∑</span>
+      <span>maths<span class="brand-accent">made easy</span></span>
+    </a>
+    <div class="topbar-note"><span class="live-dot"></span> Your maths journey, one step at a time</div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">JUNIOR SECONDARY MATHEMATICS</p>
+        <h1 id="hero-title">Big ideas. <span>Made simple.</span></h1>
+        <p class="hero-description">Understand the lesson, see how it works, then practise until it clicks.</p>
+        <div class="hero-stats">
+          <div><strong id="topic-count">25</strong><span>topic guides</span></div>
+          <div><strong id="question-count">1,250</strong><span>practice questions</span></div>
+          <div><strong id="solved-count">0</strong><span>questions answered</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="math-float float-one">π</span><span class="math-float float-two">÷</span>
+        <span class="math-float float-three">x²</span>
+        <div class="math-card"><span class="card-label">TODAY'S REMINDER</span><strong>Every expert<br>was once a beginner.</strong><span class="card-scribble">keep going ↗</span></div>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Browse and study mathematics topics">
+      <aside class="sidebar">
+        <div class="sidebar-heading"><span class="section-kicker">YOUR CLASS</span><span class="class-icon" aria-hidden="true">▦</span></div>
+        <div class="class-switch" role="group" aria-label="Choose your class">
+          <button class="class-button active" data-level="JSS1" aria-pressed="true"><span class="class-number">01</span><span><strong>JSS 1</strong><small>Build your foundations</small></span><span class="button-chevron">›</span></button>
+          <button class="class-button" data-level="JSS2" aria-pressed="false"><span class="class-number">02</span><span><strong>JSS 2</strong><small>Take it a step further</small></span><span class="button-chevron">›</span></button>
+        </div>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-heading topics-heading"><span class="section-kicker">TOPIC LIBRARY</span><span class="topic-total" id="visible-count">10</span></div>
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="topic-search" type="search" placeholder="Find a topic..." aria-label="Search topics"><kbd>/</kbd></label>
+        <nav id="topic-nav" class="topic-nav" aria-label="Topics"></nav>
+        <div class="sidebar-foot"><span class="foot-emoji" aria-hidden="true">✦</span><p><strong>Small steps count.</strong><br>Practice a little every day.</p></div>
+      </aside>
+
+      <section class="lesson-area" aria-live="polite">
+        <div class="lesson-toolbar">
+          <div class="breadcrumbs"><span id="crumb-class">JSS 1</span><span aria-hidden="true">/</span><span id="crumb-topic">Number &amp; numeration</span></div>
+          <div class="lesson-actions"><span class="lesson-number" id="lesson-number">TOPIC 01</span><button class="bookmark-button" id="bookmark-button" aria-label="Save topic" title="Save topic"><span aria-hidden="true">☆</span></button></div>
+        </div>
+        <div id="lesson-content"></div>
+      </section>
+    </section>
+    <footer class="footer"><span>Made for curious minds.</span><span>Keep learning, keep growing <span class="footer-heart">♥</span></span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
